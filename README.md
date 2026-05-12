@@ -16,6 +16,12 @@ venv\Scripts\activate           # Windows
 pip install -r requirements.txt
 ```
 
+**Optional: enable HEIF/AVIF input support**
+```bash
+pip install -r requirements-heif.txt
+```
+Use this only if your deployment image includes compatible `libheif` system libraries.
+
 **3. Run**
 ```bash
 python app.py

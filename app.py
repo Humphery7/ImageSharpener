@@ -114,7 +114,7 @@ def sharpen():
         except UnidentifiedImageError:
             results.append({
                 "name": f.filename,
-                "error": "Unsupported or corrupted image format. Try JPG, PNG, WEBP, or AVIF."
+                "error": "Unsupported or corrupted image format. Try JPG, PNG, or WEBP. (HEIF/AVIF requires optional pillow-heif support.)"
             })
         except Exception as e:
             results.append({"name": f.filename, "error": str(e)})

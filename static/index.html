@@ -567,6 +567,10 @@ async function processOne(item, strength, mode) {
     setProgress(item.id, 0);
     const prog = document.getElementById('prog-' + item.id);
     if (prog) prog.style.display = 'none';
+    const act = document.getElementById('actions-' + item.id);
+    if (act) {
+      act.innerHTML = `<div style="margin-top:8px;color:#ff8a8a;font-size:11px;line-height:1.4">${item.error || 'Processing failed'}</div>`;
+    }
   }
 
   updateStats();

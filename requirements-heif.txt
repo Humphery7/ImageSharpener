@@ -1,0 +1,3 @@
+# Optional HEIF/AVIF support.
+# Install only on environments where libheif development headers are available.
+pillow-heif==0.18.0
